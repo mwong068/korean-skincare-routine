@@ -32,7 +32,7 @@ class Nav extends React.Component {
         return (
         <Navigation>
             <ul>
-                <li><Logo><img src={require('../../assets/logo.svg')} /></Logo></li>
+                <li><Logo><img src={require('../../assets/logo.svg')} alt="huddle logo"/></Logo></li>
                 <li><Button>Try It Free</Button></li>
             </ul>
         </Navigation>

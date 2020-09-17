@@ -55,7 +55,7 @@ class Header extends React.Component {
                     <Button>Get Started For Free</Button>
                 </LeftText>
                 <RightImages>
-                    <img src={require('../../assets/illustration-mockups.svg')} />
+                    <img src={require('../../assets/illustration-mockups.svg')} alt="huddle logo" />
                 </RightImages>
             </HeaderText>
         </Background>

@@ -1,9 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
+import Content from './Content';
 
 const Background = styled.div`
     background-color: hsl(192, 100%, 9%);
-    padding: 65px 50px;
+    padding: 65px 90px;
     color: white;
 `;
 
@@ -12,18 +13,7 @@ const HeaderText = styled.div`
 
     img {
         filter: brightness(0) invert(1);
-        width: 22%;
-    }
-`;
-
-const Content = styled.div`
-    display: grid;
-    text-align: left;
-    width: 300px;
-    padding: 20px;
-
-    p {
-        font-size: 12px;
+        width: 15%;
     }
 `;
 
@@ -37,11 +27,9 @@ class Footer extends React.Component {
         return (
         <Background>
             <HeaderText>
-                <img src={require('../../assets/logo.svg')} />
+                <img src={require('../../assets/logo.svg')} alt="huddle logo" />
             </HeaderText>
-            <Content>
-                <p>Lorem ipsum</p>
-            </Content>
+            <Content />
             <Copyright>
                 <p>Copyright 2018 Huddle. All rights reserved.</p>
             </Copyright>
