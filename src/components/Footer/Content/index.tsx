@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 const Background = styled.div`
     color: white;
@@ -82,8 +82,8 @@ class Content extends React.Component {
             <Socials>
                 <ul>
                     <li><FontAwesomeIcon icon={faFacebook} className="icons" /></li>
-                    <li><FontAwesomeIcon icon={faFacebook} className="icons" /></li>
-                    <li><FontAwesomeIcon icon={faFacebook} className="icons" /></li>
+                    <li><FontAwesomeIcon icon={faTwitter} className="icons" /></li>
+                    <li><FontAwesomeIcon icon={faInstagram} className="icons" /></li>
                 </ul>
             </Socials>
         </Background>
