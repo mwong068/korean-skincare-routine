@@ -13,30 +13,30 @@ const Background = styled.div`
   box-shadow: 1px 1px 1px 1px #f2f2f2;
 `;
 
-const LeftText = styled.div`
+const LeftImage = styled.div`
+    img {
+        height: 250px;
+    }
+`
+
+const RightText = styled.div`
     text-align: left;
     width: 80%;
     margin-top: 70px;
     padding: 30px;
 `
 
-const RightImage = styled.div`
-    img {
-        height: 250px;
-    }
-`
-
 class CardOne extends React.Component {
     render() {
         return (
         <Background>
-            <LeftText>
-                <h2>Grow Together</h2>
+            <LeftImage>
+            <img src={require('../../../assets/illustration-flowing-conversation.svg')} alt="two people working" />
+            </LeftImage>
+            <RightText>
+                <h2>Flowing Conversation</h2>
                 <p>Generate meaningful discussions</p>
-            </LeftText>
-            <RightImage>
-                <img src={require('../../../assets/illustration-grow-together.svg')} alt="two people working" />
-            </RightImage>
+            </RightText>
         </Background>
         )
     }

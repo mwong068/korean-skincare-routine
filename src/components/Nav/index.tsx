@@ -23,8 +23,8 @@ const Button = styled.button`
     width: 115px;
     border-radius: 50px;
     background-color: white;
-    border: 1px solid hsl(208, 11%, 55%);
-    box-shadow: 1px 1px 1px 1px hsl(208, 11%, 55%);
+    border: 1px solid #f2f2f2;
+    box-shadow: 1px 1px 1px 1px #f2f2f2;
 `;
 
 class Nav extends React.Component {

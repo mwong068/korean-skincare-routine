@@ -1,10 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 import CardOne from './CardOne';
+import CardTwo from './CardTwo';
+import CardThree from './CardThree';
 
 const Background = styled.div`
     background-color: white;
-    padding: 30px;
+    padding: 120px;
 `;
 
 
@@ -13,6 +15,10 @@ class Cards extends React.Component {
         return (
         <Background>
             <CardOne />
+            <br></br>
+            <CardTwo />
+            <br></br>
+            <CardThree />
         </Background>
         )
     }

@@ -31,11 +31,11 @@ class CardOne extends React.Component {
         return (
         <Background>
             <LeftText>
-                <h2>Grow Together</h2>
+                <h2>Your Users</h2>
                 <p>Generate meaningful discussions</p>
             </LeftText>
             <RightImage>
-                <img src={require('../../../assets/illustration-grow-together.svg')} alt="two people working" />
+                <img src={require('../../../assets/illustration-your-users.svg')} alt="two people working" />
             </RightImage>
         </Background>
         )
