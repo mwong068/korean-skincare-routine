@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
-import {  } from '@fortawesome/free-';
+import { faMapMarkerAlt, faPhoneVolume, faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons';
 
 const Background = styled.div`
     color: white;
@@ -23,6 +23,12 @@ const Background = styled.div`
 
 const ContactText = styled.div`
     text-align: left;
+    display: grid;
+    grid-template-columns: auto auto;
+
+    .text {
+        margin-left: -45px;
+    }
 
     p {
         width: 70%;
@@ -60,11 +66,21 @@ class Content extends React.Component {
         return (
         <Background>
             <ContactText>
-                <ul>
-                    <li><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p></li>
-                    <li>+1-543-123-4567</li>
-                    <li>example@huddle.com</li>
-                </ul>
+                <div>
+                    <ul>
+                        <li><FontAwesomeIcon icon={faMapMarkerAlt} className="icons" /></li>
+                        <br></br><br></br>
+                        <li><FontAwesomeIcon icon={faPhoneVolume} className="icons" /></li>
+                        <li><FontAwesomeIcon icon={faEnvelopeSquare} className="icons" /></li>
+                    </ul>
+                </div>
+                <div className="text">
+                    <ul>
+                        <li><span><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p></span></li>
+                        <li>+1-543-123-4567</li>
+                        <li>example@huddle.com</li>
+                    </ul>
+                </div>
             </ContactText>
             <Text>
                 <ul>
