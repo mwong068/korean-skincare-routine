@@ -4,7 +4,7 @@ import Content from './Content';
 
 const Background = styled.div`
     background-color: hsl(192, 100%, 9%);
-    padding: 65px 90px;
+    padding: 150px 90px 65px 90px;
     color: white;
 `;
 
@@ -18,8 +18,8 @@ const HeaderText = styled.div`
 `;
 
 const Copyright = styled.div`
-  font-size: 10px;
-  text-align: right;
+    font-size: 10px;
+    text-align: right;
 `;
 
 class Footer extends React.Component {

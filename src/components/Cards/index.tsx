@@ -6,7 +6,7 @@ import CardThree from './CardThree';
 
 const Background = styled.div`
     background-color: white;
-    padding: 120px;
+    padding: 120px 120px 250px 120px;
 `;
 
 
