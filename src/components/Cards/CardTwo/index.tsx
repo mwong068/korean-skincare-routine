@@ -3,8 +3,8 @@ import styled from 'styled-components';
 
 const Background = styled.div`
   display: grid;
-  grid-template-columns: auto auto;
-  width: 65%;
+  grid-template-columns: auto 1fr auto;
+  width: 100%;
   border: 1px solid grey;
   margin: auto;
   padding: 50px 20px;
@@ -19,10 +19,14 @@ const LeftImage = styled.div`
     }
 `
 
+const Divider = styled.div`
+    width: 50px;
+`
+
 const RightText = styled.div`
     text-align: left;
     width: 80%;
-    margin-top: 70px;
+    margin-top: 40px;
     padding: 30px;
 `
 
@@ -33,9 +37,10 @@ class CardOne extends React.Component {
             <LeftImage>
             <img src={require('../../../assets/illustration-flowing-conversation.svg')} alt="two people working" />
             </LeftImage>
+            <Divider />
             <RightText>
-                <h2>Flowing Conversation</h2>
-                <p>Generate meaningful discussions</p>
+                <h2>Flowing Conversations</h2>
+                <p>You wouldn't paginate a conversation in real life, so why do it online? Our threads have just-in-time loading or a more natural flow.</p>
             </RightText>
         </Background>
         )
