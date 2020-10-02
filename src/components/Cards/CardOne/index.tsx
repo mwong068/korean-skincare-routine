@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const Background = styled.div`
   display: grid;
-  grid-template-columns: 1fr 3fr 3fr 1fr;
+  grid-template-columns: 2fr auto 2fr;
   width: 100%;
   border: 1px solid grey;
   margin: auto;
@@ -17,10 +17,10 @@ const LeftText = styled.div`
     text-align: left;
     width: 100%;
     margin-top: 40px;
-    padding: 30px;
+    padding: 30px 70px;
 
     p {
-        width: 70%;
+        width: 80%;
     }
 `
 
@@ -34,16 +34,17 @@ class CardOne extends React.Component {
     render() {
         return (
         <Background>
-            <div></div>
+            {/* <div></div> */}
             <LeftText>
                 <h2>Grow Together</h2>
                 <br></br>
                 <p>Generate meaningful discussions with your audience and build a strong, loyal community. Think of the insightful conversations you miss out on with a feedback form.</p>
             </LeftText>
+            <div></div>
             <RightImage>
                 <img src={require('../../../assets/illustration-grow-together.svg')} alt="two people working" />
             </RightImage>
-            <div></div>
+            {/* <div></div> */}
         </Background>
         )
     }
